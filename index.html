@@ -10,9 +10,9 @@
 </head>
 
 <body>
-  <header class="w-full h-30 bg-red-300 flex items-center justify-around ">
+  <header class="w-full h-30 bg-red-50 flex items-center justify-around ">
     <img src="./public/img/crecimiento.png" class="w-25 h-25" alt="Charts">
-    <h1 class="text-2xl font-bold ">Management Data software</h1>
+    <h1 class="text-2xl font-bold text-red-800 ">Management Data software</h1>
   </header>
   <main class="w-full flex mt-5 gap-30 bg-white">
     <div>
@@ -44,29 +44,30 @@
     </div>
     <div class="w-200 h-125 flex justify-center">
       <form class="bg-white shadow-xl shadow-red-100 rounded-xl p-8 w-full max-w-md">
-        <h2 class="text-2xl font-bold mb-6 text-center text-red-700">Datas</h2>
+        <h2 class="text-2xl font-bold mb-6 text-center text-red-400">Data form</h2>
         <div class="flex flex-col gap-4">
-          <input type="text" placeholder="Productivity (K)"
+          <input type="number" placeholder="Productivity (K)"
             class="p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-400 outline-none" id="K-variable">
-          <input type="text" placeholder="Integrants (N)"
+          <input type="number" placeholder="Integrants (N)"
             class="p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-400 outline-none" id="N-variable">
-                    <input type="text" placeholder="Tasks (E)"
+                    <input type="number" placeholder="Tasks (E)"
             class="p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-400 outline-none" id="E-variable">
-                      <input type="text" placeholder="Time (Days) (D)"
+                      <input type="number" placeholder="Time (Days) (D)"
             class="p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-400 outline-none" id="D-variable">
-            <input type="text" placeholder="Estimated Level (F)"
+            <input type="number" placeholder="Estimated Level (F)"
             class="p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-400 outline-none" id="F-variable">
         </div>
 
-        <button type="submit"
-          class="mt-6 w-full bg-red-600 text-white font-semibold py-3 rounded-lg hover:bg-red-700 cursor-pointer transition">
+        <button type="submit" id="submit-button"
+          class="mt-6 w-full bg-red-400 text-white font-semibold py-3 rounded-lg hover:bg-red-600 cursor-pointer transition">
           Send
         </button>
       </form>
     </div>
   </main>
-  <footer class="w-full h-30 bg-red-300 flex justify-center items-center">
+  <footer class="w-full h-30 bg-red-50 flex justify-around items-center">
     <div > By: Santiago Comas Durán</div>
+    <img class="w-50" src="./public/img/Logo_cuc.png" alt="Logo_cuc">
   </footer>
   <script type="module" src="./src/main.js"></script>
 </body>

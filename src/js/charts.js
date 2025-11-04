@@ -5,17 +5,27 @@ import { Chart,ArcElement,  Tooltip,
 Chart.register(ArcElement,  Tooltip,
   Legend, DoughnutController);
 
+
+let taskChart;
+
 export function renderChartDoughnut(completed, pending){
 
 
-    const ctx = document.getElementById('chart-one');
+    const ctx = document.getElementById('chart-one').getContext('2d');;
 
+    
     if(!ctx){
         console.error("No encontro el elemento")
     }
 
+
+    // Make sure to destroy previous chart instance if it exists
+        if (taskChart) {
+        taskChart.destroy();
+    }
+
     // Guardar la instancia en una variable
-    const taskChart = new Chart(ctx, {
+     taskChart = new Chart(ctx, {
         type: "doughnut",
         data:{
             labels: ["Done", "Pending"],

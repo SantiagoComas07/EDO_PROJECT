@@ -1,5 +1,8 @@
 import './css/style.css';
-import {renderChartDoughnut} from './js/doughnut.js';
+import {renderDatas}  from './js/logic.js';
+import {renderChartDoughnut}  from "./js/charts.js";
 
-
-renderChartDoughnut(2,3);
+document.addEventListener('DOMContentLoaded', () => {
+renderChartDoughnut(2,2);
+renderDatas();
+});
