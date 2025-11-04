@@ -31,7 +31,7 @@ export function renderChartDoughnut(completed, pending){
             labels: ["Done", "Pending"],
             datasets:[{
                 data: [completed, pending],
-                backgroundColor:["#F5E70F","#FFDBC2"]
+                backgroundColor:["#991B1B","#FECACA"]
             }]
         },
         options: {
